@@ -22,13 +22,33 @@ export default new Router({
       }
     },
     {
-      path: '/categorialist',
-      name: 'categorialist',
+      path: '/categorias',
+      name: 'categorias',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: function () { 
         return import(/* webpackChunkName: "about" */ './views/CategoriaList.vue')
+      }
+    },
+    {
+      path: '/categorias/new',
+      name: 'categoriasnew',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: function () { 
+        return import(/* webpackChunkName: "about" */ './views/CategoriaNew.vue')
+      }
+    },
+    {
+      path: '/categorias/edit/:id',
+      name: 'categoriasedit',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: function () { 
+        return import(/* webpackChunkName: "about" */ './views/CategoriaEdit.vue')
       }
     }
   ]

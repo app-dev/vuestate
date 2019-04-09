@@ -3,12 +3,16 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/categorialist">Categoria</router-link>
+      <router-link to="/categorias">Categoria</router-link>
     </div>
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'app'
+}
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
